@@ -1,0 +1,91 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #212529;
+}
+
+header h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.contact p {
+    margin: 0.3rem 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Titles */
+main h3 {
+    margin-top: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.4rem;
+    font-size: 1.25rem;
+}
+
+/* List Formatting */
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-top: 0.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    main h3 {
+        font-size: 1.1rem;
+    }
+}

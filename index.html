@@ -14,7 +14,8 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mohammadtaghi Badakhshan</title>
+    <meta name="description" content="Personal page of Mohammadtaghi Badakhshan, commonly known as Taghi – zkSNARK and privacy researcher.">
+    <title>Taghi Badakhshan</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
@@ -22,10 +23,10 @@
 <body>
     <div class="container">
         <header>
-            <h1>Mohammadtaghi Badakhshan</h1>
-            <h2>Ph.D. Candidate · Cryptography & Privacy-Preserving Systems</h2>
+            <h1>Mohammad<span style="color:#0077cc; font-weight:bold">taghi</span> Badakhshan</h1>
+            <h2>Applied Cryptographer (zkSNARK and PQC)</h2>
             <div class="contact">
-                <p>Email: mbadakhshan [at] uwaterloo [dot] ca</a></p>
+                <p>Email: mbadakhshan [at] uwaterloo [dot] ca</p>
                 <p>
                     <a href="https://github.com/mtbadakhshan" target="_blank">GitHub</a> · 
                     <a href="https://linkedin.com/in/mtbadakhshan" target="_blank">LinkedIn</a> ·
@@ -38,15 +39,19 @@
         <main>
             <section id="about">
                 <h3>About Me</h3>
-                <p>I am a Ph.D. candidate at the University of Waterloo with over seven years of research in blockchain technologies and four years of specialization in post-quantum secure zkSNARKs. I have successfully defended my thesis and am finalizing revisions. My research includes accelerating post-quantum zkSNARK protocols using optimized FFT algorithms in C++, and designing privacy-preserving systems across Ethereum-like blockchains.</p>
+                <img src="photo.jpg" alt="Photo of Taghi" style="width:150px; border-radius: 8px; float: right; margin-left: 1rem;"/>
+                <p>My name is Mohammadtaghi Badakhshan, but I usually go by Taghi. I am a Ph.D. candidate at the University of Waterloo with over seven years of research in blockchain technologies and four years of specialization in post-quantum secure zkSNARKs. I have successfully defended my thesis and am finalizing revisions. My research includes accelerating post-quantum zkSNARK protocols using optimized FFT algorithms in C++, and designing privacy-preserving systems across Ethereum-like blockchains.</p>
             </section>
 
             <section id="education">
                 <h3>Education</h3>
                 <ul>
                     <li><strong>Ph.D. in Computer Software Engineering</strong>, University of Waterloo (2021–2025)</li>
+                    <ul><li><strong>Thesis:</strong> Accelerating Post-Quantum Secure zkSNARKs for Privacy-Preserving Frameworks. </li></ul>
                     <li><strong>M.Sc. in Secure Communication & Cryptography</strong>, University of Tehran (2017–2020)</li>
+                    <ul><li><strong>Thesis:</strong> Security Analysis of Lightweight Clients in a Blockchain Based Peer-to-Peer Network. </li></ul>
                     <li><strong>B.Sc. in Electrical Engineering</strong>, University of Tehran (2013–2017)</li>
+                    <ul><li><strong>Project:</strong>  Network Traffic Classification and Industrial Control System (ICS) Intrusion Detection. </li></ul>
                 </ul>
             </section>
 
@@ -54,8 +59,21 @@
                 <h3>Experience</h3>
                 <ul>
                     <li><strong>Intern (MITACS)</strong>, BTQ Technologies Corp. (2024–2025)</li>
+                    <ul>
+                        <li> Led a team consisting of a postdoctoral researcher and a master's student to analyze and accelerate the Aurora post-quantum secure zkSNARK, and prepared technical reports documenting the findings.</li>
+                        <li> Implemented, optimized and benchmarked additive FFT algorithms in C, C++, and SageMath.</li>
+                        <li> Reduced Aurora zkSNARK prover runtime by 40% via optimized FFT implementations.</li>
+                    </ul>
                     <li><strong>Research Assistant</strong>, University of Waterloo (2020–2025)</li>
+                    <ul>
+                        <li> Designed and threat-modeled a privacy-preserving ownership protocol for supply chains on Ethereum, implemented using Aurora and Groth16 zkSNARKs in C++ and Solidity.</li>
+                        <li> Designed and implemented application-specific zkSNARK circuits in C++. </li>
+                        <li> Designed an arithmetic circuit for the GKR protocol to enhance efficiency of the Polaris zkSNARK. </li>
+                    </ul>
                     <li><strong>Teaching Assistant</strong>, University of Waterloo (2021–2024)</li>
+                    <ul>
+                        <li> Conducted tutorial sessions and provided guidance to students for various courses, including Computer Security, Digital Circuits and Systems, Digital Computers, and Digital Computation.</li>
+                    </ul>
                 </ul>
             </section>
 
@@ -63,8 +81,8 @@
                 <h3>Technical Skills</h3>
                 <ul>
                     <li><strong>Languages:</strong> C/C++/C#, Python, SageMath, Bash, Solidity (Familiar: Rust, Java, JavaScript, Verilog)</li>
-                    <li><strong>Libraries and Tools:</strong> libff, libiop, libsnark, libsodium, Bitcoin Core, Google Benchmark, Google Test, Docker</li>
-                    <li><strong>Domains:</strong> zkSNARKs (Aurora, Groth16), post-quantum cryptography, privacy-preserving protocols, threat modeling, decentralized systems (Familiar: lattice/code-based crypto, provable security)</li>
+                    <li><strong>Libraries and Tools:</strong> libff, libiop, libsnark, libsodium, gf2x, bitpolymul, Bitcoin Core, Google benchmark, Google test, Docker, Git</li>
+                    <li><strong>Domains:</strong> zero-knowledge proofs (Aurora, Groth16, GKR, etc.), post-quantum cryptography (hash-based), abstract algebra, privacy-preserving protocol design, threat modeling, elliptic curve cryptography, and decentralized systems (Familiar: provable security, code-based, and lattice-based cryptogrpahy)</li>
                 </ul>
             </section>
 
