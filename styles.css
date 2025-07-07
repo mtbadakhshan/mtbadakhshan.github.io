@@ -49,7 +49,6 @@ header h2 {
 
 /* Main Section Titles */
 main h3 {
-    margin-top: 2rem;
     border-bottom: 2px solid #eee;
     padding-bottom: 0.4rem;
     font-size: 1.25rem;
@@ -88,4 +87,47 @@ li {
     main h3 {
         font-size: 1.1rem;
     }
+}
+
+section {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.project-meta {
+    margin: 1rem 0;
+}
+
+.project-meta .meta-item {
+    display: flex;
+    /* keeps key & value on one line where possible */
+    margin: .25rem 0;
+}
+
+.project-meta dl {
+  display: flex;
+}
+
+.project-meta dt {
+    font: 600 0.85rem/1.2 system-ui, sans-serif;
+    color: #003366;
+    /* tweak to match your palette */
+    background: #eef3ff;
+    /* subtle table-cell feel */
+    padding: .2rem .6rem;
+    border-radius: .75rem;
+    /* pill/round-table effect */
+    margin: 0 .6rem .25rem 0;
+}
+
+.project-meta dd {
+    /* remove default <dd> indent */
+    margin: 0;
 }
