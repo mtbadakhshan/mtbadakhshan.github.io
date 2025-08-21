@@ -131,3 +131,10 @@ section:first-of-type {
     /* remove default <dd> indent */
     margin: 0;
 }
+
+/* 
+mjx-container[display="true"] {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+} */

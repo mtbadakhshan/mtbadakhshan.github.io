@@ -1,0 +1,149 @@
+/* --- Readable content width & base type --- */
+:root {
+  --font-size: 17px;        /* base size for posts */
+  --line-height: 1.75;
+  --text: #111;
+  --muted: #666;
+  --link: #0b57d0;
+  --border: #e5e7eb;
+  --bg-code: #f6f8fa;
+}
+
+.post-content {
+  max-width: var(--measure);
+  margin-inline: auto;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--text);
+  word-wrap: break-word;
+}
+
+/* --- Headings rhythm --- */
+.post-content h1, .post-content h2, .post-content h3,
+.post-content h4, .post-content h5, .post-content h6 {
+  line-height: 1.25;
+  margin-top: 2.0rem;
+  margin-bottom: 0.8rem;
+}
+.post-content h1 { font-size: 1.9rem; }
+.post-content h2 { font-size: 1.6rem; }
+.post-content h3 { font-size: 1.35rem; }
+
+/* --- Paragraphs & lists --- */
+.post-content p,
+.post-content ul,
+.post-content ol,
+.post-content blockquote {
+  margin: 0.9rem 0;
+}
+.post-content li { margin: 0.35rem 0; }
+
+/* --- Links --- */
+.post-content a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.post-content a:hover { opacity: 0.9; }
+
+/* --- Images & figures --- */
+.post-content img,
+.post-content video,
+.post-content canvas,
+.post-content iframe {
+  max-width: 100%;
+  height: auto;
+}
+.post-content figure {
+  margin: 1.25rem 0;
+  text-align: center;
+}
+.post-content figcaption {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+/* --- Code --- */
+.post-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95em;
+  background: var(--bg-code);
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+}
+.post-content pre {
+  background: var(--bg-code);
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.55;
+}
+.post-content pre code {
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+/* --- Blockquotes --- */
+.post-content blockquote {
+  padding: 0.6rem 1rem;
+  border-left: 4px solid var(--border);
+  background: #fafafa;
+  color: #222;
+}
+
+/* --- Tables --- */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.97rem;
+}
+.post-content th,
+.post-content td {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--border);
+}
+.post-content thead th {
+  background: #f3f4f6;
+  text-align: left;
+}
+
+/* --- Horizontal rule --- */
+.post-content hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* --- Footnotes --- */
+.post-content .footnotes {
+  font-size: 0.92rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+/* --- MathJax v3 tweaks --- */
+mjx-container[jax="CHTML"][display="true"] {
+  display: block;
+  margin: 1.25rem auto;
+  overflow-x: auto;       /* long equations can scroll horizontally */
+}
+mjx-container { font-size: 1.02em; }
+
+/* --- Dark mode --- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #000000;
+    --muted: #a3a3a3;
+    --link: #002aff;
+    --border: #2b2b2b;
+    --bg-code: #d9dde2;
+  }
+  .post-content blockquote { background: #121417; color: #e5e5e5; }
+  .post-content thead th { background: #171a1f; }
+}
