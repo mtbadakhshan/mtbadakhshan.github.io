@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: taghi.io
+
 email: mtbadakhshan@gmail.com
 author: Mohammadtaghi Badakhshan
 description: >- # this means to ignore newlines until "baseurl:"
@@ -28,6 +29,7 @@ url: "https://taghi.io" # the base hostname & protocol for your site, e.g. http:
 twitter_username: _taghi
 linkedin_username: mtbadakhshan
 github_username:  mtbadakhshan
+google_analytics: G-VTQXRGCF9R 
 
 # Build settings
 theme: minima
