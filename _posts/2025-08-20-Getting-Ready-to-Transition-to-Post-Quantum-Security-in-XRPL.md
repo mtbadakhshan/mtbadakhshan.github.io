@@ -33,10 +33,11 @@ where $B$ is the base point. The parameters $q$ and $B$ are specified according 
 ### EdDSA Key Pair Generation
 The Mysten Labs' idea is based on EdDSA's standard for key generation, and it is different to ECDSA. [RFC 8032](https://datatracker.ietf.org/doc/html/rfc8032) ([Section 5.1.5](https://datatracker.ietf.org/doc/html/rfc8032#section-5.1.5)) describes the key generation of **Ed25519**, a famous parameter set of the EdDSA algorithm, which [XRPL aslo supports it](https://xrpl.org/docs/concepts/accounts/cryptographic-keys#ed25519-key-derivation). According to this standard, the secret key ($sk$) is a 32-byte (256 bits) randomly sampled number, and the public key ($pk$) is derived as 
 \\[
-\begin{aligned}
-ss &= \text{HashToScalar}(\textsf{SHA512}(sk)[0:32])\\
-pk &= ss\cdot B,
-\end{aligned}
+ss = \text{HashToScalar}(\textsf{SHA512}(sk)[0:32]),
+\\]
+then
+\\[
+pk = ss\cdot B,
 \\]
 where $[0:32]$ denotes the lower 32 bytes of the $\textsf{SHA512}$'s output. This output truncation of $\textsf{SHA512}$ is referred to as "`SHA-512Half`" in [XRPL's documents](https://xrpl.org/docs/references/protocol/data-types/basic-data-types#hashes). Moreover, the $\text{HashtoScalar}$ procedure prunes (clamps) the 32-bytes result to derive a *secret scalar* $ss$ which is suitable for Ed25519 (The procedure and the rationale behind this is [described by Neil Madden](https://neilmadden.blog/2020/05/28/whats-the-curve25519-clamping-all-about/)). Finally, the derived $ss$ is multiplied by $B$, where $B$ denotes the base point of Ed25519.
 
